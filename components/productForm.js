@@ -14,7 +14,7 @@ export default function ProductForm({
     images: existingImages,
     category:assignedCategory,
 }) {
-    // Definicion de estados locales para el formulario del producto
+    // Definicion de estados locales para el formulario del producto.
     const [title, setTitle] = useState(existingTitle || '');
     const [description, setDescription] = useState(existingDescription || '');
     const [category, setCategory] = useState(assignedCategory || '');
