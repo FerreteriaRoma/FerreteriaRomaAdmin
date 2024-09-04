@@ -49,7 +49,7 @@ export default function OrdersPage() {
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="3">No orders found</td>
+                            <td colSpan="3">No hay ordenes</td>
                         </tr>
                     )}
                 </tbody>
