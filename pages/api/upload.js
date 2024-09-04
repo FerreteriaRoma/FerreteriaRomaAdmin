@@ -6,7 +6,7 @@ import fs from 'fs';
 import mime from 'mime-types'
 import { mongooseConnect } from '@/lib/mongoose';
 
-const bucketName = 'dawid-next-ecommers';
+const bucketName = 'ferreteriaroma';
 
 export default async function handle(req, res) {
     await mongooseConnect();
