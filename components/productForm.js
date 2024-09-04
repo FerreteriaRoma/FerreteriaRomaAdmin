@@ -112,7 +112,7 @@ export default function ProductForm({
         setImages(images); // Actualiza el estado con el nuevo orden de imagenes
     }
 
-    // Render del componente new
+    // Render del componente
     return (
         <form onSubmit={saveProduct}>
             <label>Nombre del producto</label>
