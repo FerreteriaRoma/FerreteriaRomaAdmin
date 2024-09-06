@@ -17,13 +17,13 @@ export default function OrdersPage() {
 
     return (
         <Layout>
-            <h1>Orders</h1>
+            <h1>Pedidos</h1>
             <table className="basic">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Recipient</th>
-                        <th>Products</th>
+                        <th>Fecha de creacion</th>
+                        <th>Datos del cliente</th>
+                        <th>Productos</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,6 +37,7 @@ export default function OrdersPage() {
                                     <text>Numero telefonico: {order.phone}</text><br />
                                     <text>Ciudad: {order.city}</text><br />
                                     <text>Direccion: {order.StreetAddress}</text><br />
+                                    <text>Precio total: $ {order.total_amount}</text>
                                 </td>
                                 <td>
                                     {order.line_items.map((l, index) => (
@@ -49,7 +50,7 @@ export default function OrdersPage() {
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="3">No hay ordenes</td>
+                            <td colSpan="3">No hay pedidos</td>
                         </tr>
                     )}
                 </tbody>
