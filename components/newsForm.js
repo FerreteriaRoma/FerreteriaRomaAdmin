@@ -115,7 +115,8 @@ export default function NewsForm({
             <textarea 
                 placeholder="Descripción" 
                 value={description}
-                onChange={ev => setDescription(ev.target.value)} 
+                onChange={ev => setDescription(ev.target.value)}
+                style={{whiteSpace: 'pre-line'}}
             />
             <label>Imagenes</label>
             <div className="mb-2 flex flex-wrap gap-1">
