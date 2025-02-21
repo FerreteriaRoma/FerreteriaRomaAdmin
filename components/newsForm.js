@@ -118,23 +118,6 @@ export default function NewsForm({
                     value={description}
                     onChange={ev => setDescription(ev.target.value)}
                 />
-                <button
-                    type="button"
-                    onClick={() => setDescription(prev => prev + '**Texto en negrita**')}
-                    style={{
-                        position:"absolute",
-                        right:"10px",
-                        button:"10px",
-                        padding:"5px 10px",
-                        background:"#0070f3",
-                        color:"white",
-                        border:"none",
-                        borderRadius:"4px",
-                        cursor:"pointer"
-                    }}
-                >
-                    Negrita
-                </button>
             </div>
             <label>Imagenes</label>
             <div className="mb-2 flex flex-wrap gap-1">
