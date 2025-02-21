@@ -112,12 +112,32 @@ export default function NewsForm({
                 onChange={ev => setEntrance(ev.target.value)}
             />
             <label>Descripción</label>
-            <textarea 
+            // Reemplaza el textarea actual por este bloque
+            <div style={{position: 'relative'}}>
+              <textarea 
                 placeholder="Descripción" 
                 value={description}
                 onChange={ev => setDescription(ev.target.value)}
-                style={{whiteSpace: 'pre-line'}}
-            />
+                style={{whiteSpace: 'pre-line', minHeight: '200px'}}
+                />
+              <button 
+                type="button"
+                onClick={() => setDescription(prev => prev + '**Texto en negrita**')}
+                style={{
+                position: 'absolute',
+                right: '10px',
+                bottom: '10px',
+                padding: '5px 10px',
+                background: '#0070f3',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer'
+            }}
+            >
+            Negrita
+            </button>
+        </div>
             <label>Imagenes</label>
             <div className="mb-2 flex flex-wrap gap-1">
                 <ReactSortable 
