@@ -118,7 +118,6 @@ export default function NewsForm({
                 onChange={ev => setDescription(ev.target.value)}
                 style={{whiteSpace: 'pre-line'}}
             />
-        </div>
             <label>Imagenes</label>
             <div className="mb-2 flex flex-wrap gap-1">
                 <ReactSortable 
